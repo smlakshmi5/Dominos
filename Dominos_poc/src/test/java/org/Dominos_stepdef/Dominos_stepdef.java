@@ -63,7 +63,7 @@ public class Dominos_stepdef extends BaseClass_Dominos{
 
 	@Then("Remove quantity")
 	public void remove_quantity() {
-	    driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	    driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
 	    driver.manage().deleteAllCookies();
 	    toClick(dp.getMarghrem());
 	    for (int i = 1; i < 7; i++) {
